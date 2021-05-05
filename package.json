@@ -1,8 +1,8 @@
 {
-  "name": "shubh-site",
+  "name": "shubham-portfolio",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": ["typescript", "react", "starter"],
+  "description": "",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
     "react": "17.0.2",
