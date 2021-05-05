@@ -4,6 +4,12 @@
   ],
   "compilerOptions": {
     "strict": true,
+    "baseUrl": "src",
+    "paths": {
+      "src/*": [
+        "*"
+      ]
+    },
     "esModuleInterop": true,
     "lib": [
       "dom",
