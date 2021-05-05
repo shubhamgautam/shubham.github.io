@@ -16,10 +16,10 @@
     "react-jsx": "1.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts start",
+    "build": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts build",
+    "test": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts test --env=jsdom",
+    "eject": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts eject"
   },
   "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
