@@ -24,12 +24,12 @@
   "scripts": {
     "build:css": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/index.css",
     "watch:css": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/index.css --watch",
-    "env:dev": "cross-env NODE_ENV=development DISABLE_NEW_JSX_TRANSFORM=true",
-    "env:prod": "cross-env NODE_ENV=production DISABLE_NEW_JSX_TRANSFORM=true",
-    "start": "run-p env:dev react-scripts start",
-    "build": "run-s env:prod react-scripts build",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production",
+    "start": "run-p env:dev DISABLE_NEW_JSX_TRANSFORM=true react-scripts start",
+    "build": "run-s env:prod DISABLE_NEW_JSX_TRANSFORM=true react-scripts build",
     "test": "DISABLE_NEW_JSX_TRANSFORM=true react-scripts test --env=jsdom",
-    "eject": "DISABLE_NEW_JSX_TRANSFORM=true react-scripts eject"
+    "eject": "DISABLE_NEW_JSX_TRANSFORM=true react-scripts reject"
   },
   "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
