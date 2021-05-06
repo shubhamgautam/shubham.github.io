@@ -26,8 +26,11 @@
     "watch:css": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/index.css --watch",
     "env:dev": "cross-env NODE_ENV=development",
     "env:prod": "cross-env NODE_ENV=production",
-    "start": "run-p env:dev DISABLE_NEW_JSX_TRANSFORM=true react-scripts start",
-    "build": "run-s env:prod DISABLE_NEW_JSX_TRANSFORM=true react-scripts build",
+    "disable:jsx": "cross-env DISABLE_NEW_JSX_TRANSFORM=true",
+    "react-scripts:start": "react-scripts start",
+    "react-scripts:build": "react-scripts build",
+    "start": "run-p env:dev disable:jsx react-scripts:start",
+    "build": "run-s env:prod disable:jsx react-scripts:build",
     "test": "DISABLE_NEW_JSX_TRANSFORM=true react-scripts test --env=jsdom",
     "eject": "DISABLE_NEW_JSX_TRANSFORM=true react-scripts reject"
   },
