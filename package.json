@@ -5,6 +5,10 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "@craco/craco": "6.1.2",
+    "@tailwindcss/postcss7-compat": "2.1.2",
+    "autoprefixer": "10.2.5",
+    "postcss": "8.2.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "4.0.0"
@@ -16,9 +20,9 @@
     "react-jsx": "1.0.0"
   },
   "scripts": {
-    "start": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts start",
-    "build": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts build",
-    "test": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts test --env=jsdom",
+    "start": "env DISABLE_NEW_JSX_TRANSFORM=true craco start",
+    "build": "env DISABLE_NEW_JSX_TRANSFORM=true craco build",
+    "test": "env DISABLE_NEW_JSX_TRANSFORM=true craco test --env=jsdom",
     "eject": "env DISABLE_NEW_JSX_TRANSFORM=true react-scripts eject"
   },
   "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
