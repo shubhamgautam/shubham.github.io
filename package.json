@@ -22,8 +22,8 @@
     "react-jsx": "1.0.0"
   },
   "scripts": {
-    "build:css": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/index.css",
-    "watch:css": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/index.css --watch",
+    "build:css": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss src/styles.css -o src/styles/styles.css",
+    "watch:css": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss src/styles.css -o src/styles.css --watch",
     "env:dev": "cross-env NODE_ENV=development",
     "env:prod": "cross-env NODE_ENV=production",
     "disable:jsx": "cross-env DISABLE_NEW_JSX_TRANSFORM=true",
