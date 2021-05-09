@@ -3,23 +3,25 @@ import "./styles.css";
 
 type linkProps = {
   title: string;
+  url: string;
   isActive: boolean;
   onClick?: () => void;
 };
 
 const link = (props: linkProps): React.ReactElement<{}> => {
-  const { title, onClick, isActive } = props;
+  const { title, onClick, isActive, url } = props;
   const onLinkClick = (): void => {
     console.log("link clicked");
     onClick && onClick();
   };
   return (
-    <div
+    <a
       className={`${isActive ? "link active" : "link"}`}
       onClick={onLinkClick}
+      href={url}
     >
       {title}
-    </div>
+    </a>
   );
 };
 
