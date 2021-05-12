@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Link} from "react-router-dom";
 import "./styles.css";
 
 type linkProps = {
@@ -10,18 +11,15 @@ type linkProps = {
 
 const link = (props: linkProps): React.ReactElement<{}> => {
   const { title, onClick, isActive, url } = props;
-  const onLinkClick = (): void => {
-    console.log("link clicked");
-    onClick && onClick();
-  };
+
   return (
-    <a
+    <Link
       className={`${isActive ? "link active" : "link"}`}
-      onClick={onLinkClick}
-      href={url}
+      to={`/home?content=${title.toLocaleLowerCase()}`}
+      replace
     >
       {title}
-    </a>
+    </Link>
   );
 };
 

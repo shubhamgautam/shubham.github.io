@@ -9,7 +9,7 @@ type itemProp = {
 }
 
 const navBar = (): React.ReactElement<{}> => {
-  const itemArr = [{label:"Youtube", url: "https://www.youtube.com/c/TheShubhamGautamExperience/"}, {label: "Medium", url: "https://shubhamgautamlog.medium.com/"}, {label: "Github", url: "https://github.com/shubhamgautam"}];
+  const itemArr = [{label:"Youtube", url: ""}, {label: "Medium", url: ""}, {label: "Github", url: ""}];
   getYtVideos();
   return (
     <div className="tp-bar">
