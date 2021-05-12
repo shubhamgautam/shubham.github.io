@@ -1,25 +1,25 @@
 import * as React from "react";
+import {Link} from "react-router-dom";
 import "./styles.css";
 
 type linkProps = {
   title: string;
+  url: string;
   isActive: boolean;
   onClick?: () => void;
 };
 
 const link = (props: linkProps): React.ReactElement<{}> => {
-  const { title, onClick, isActive } = props;
-  const onLinkClick = (): void => {
-    console.log("link clicked");
-    onClick && onClick();
-  };
+  const { title, onClick, isActive, url } = props;
+
   return (
-    <div
+    <Link
       className={`${isActive ? "link active" : "link"}`}
-      onClick={onLinkClick}
+      to={`/home?content=${title.toLocaleLowerCase()}`}
+      replace
     >
       {title}
-    </div>
+    </Link>
   );
 };
 

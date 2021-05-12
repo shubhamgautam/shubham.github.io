@@ -1,0 +1,4 @@
+.video-cont {
+  max-width: 80vw;
+  overflow-x: scroll;
+}

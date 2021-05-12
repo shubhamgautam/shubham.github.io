@@ -5,7 +5,7 @@ import NavBar from "./components/navBar";
 const topBar = (): React.ReactElement<{}> => {
   return (
     <div className="tp-bar">
-      <div>logo</div>
+      <div>Shubham Gautam</div>
       <NavBar />
     </div>
   );
