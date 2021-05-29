@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./styles.css";
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import VideoBlock from "../../components/VideoBlock";
 
 function useQuery() {
@@ -13,20 +13,20 @@ const content = (): React.ReactElement<{}> => {
   const content = query.get("content")
 
   const getContentBlock = React.useCallback(() => {
-    switch(content) {
+    switch (content) {
       case "medium":
         return <div>medium</div>;
       case "github":
-          return <div>github</div>;
+        return <div>github</div>;
       case "youtube":
-        default: 
-          return  <VideoBlock />
+      default:
+        return <VideoBlock />
     }
   }, [content])
-  
+
   return (
     <div className="content-cont">
-      <div>vertical title</div>
+      <div style={{ height: 30, width: 30 }} className="origin-center transform rotate-90 ">{content}</div>
       <div>
         {getContentBlock()}
       </div>

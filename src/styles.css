@@ -5,10 +5,9 @@
   font-family: sans-serif;
   text-align: center;
   height: 80vh;
-  padding: 10px;
 }
 
 body {
-  padding: 30px;
-  background-color: rgb(240, 238, 236);
+  font-family: 'Open Sans', sans-serif;
+  background-color: #02080f;
 }

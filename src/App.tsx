@@ -8,29 +8,34 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+import SportsBg from "./components/StarsBg";
 
 import "./styles.css";
 
 const App = () => {
   return (
     <div className="App ">
-      <TopBar />
-      <Content />
-      <BottomBar />
+      <SportsBg>
+        <div>
+          <TopBar />
+          <Content />
+          <BottomBar />
+        </div>
+      </SportsBg>
     </div>
   );
 }
 
 export default function WithRouter() {
   return <Router>
-      <App />
-      <Switch>
-              <Route
-                exact
-                path="/"
-                render={() => 
-                      <Redirect to='/home?content=youtube' /> }
-              />
-            </Switch>
+    <App />
+    <Switch>
+      <Route
+        exact
+        path="/"
+        render={() =>
+          <Redirect to='/home?content=youtube' />}
+      />
+    </Switch>
   </Router>
 }
