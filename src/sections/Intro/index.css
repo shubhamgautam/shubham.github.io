@@ -1,0 +1,39 @@
+.header {
+  color: #fff600;
+}
+
+.name {
+  color: #f8eded;
+}
+
+.sub-heading {
+  color: #949dc0;
+}
+
+.heading-big {
+  margin: 0px;
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: 600;
+}
+
+.description {
+  color: #8892b0;
+}
+
+.description p {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.intro-sec {
+  margin: 0px auto;
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+}
