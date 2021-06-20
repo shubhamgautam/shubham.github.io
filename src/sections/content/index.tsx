@@ -9,9 +9,9 @@ function useQuery() {
 }
 
 // center content block
-const content = (): React.ReactElement<{}> => {
+const Content = (): React.ReactElement<{}> => {
   let query = useQuery();
-  const content = query.get("content")
+  const content = query.get("content");
 
   const getContentBlock = React.useCallback(() => {
     switch (content) {
@@ -21,9 +21,9 @@ const content = (): React.ReactElement<{}> => {
         return <div>github</div>;
       case "youtube":
       default:
-        return <VideoBlock />
+        return <VideoBlock />;
     }
-  }, [content])
+  }, [content]);
 
   return (
     <div className="content">
@@ -31,8 +31,12 @@ const content = (): React.ReactElement<{}> => {
         <IntroBlock />
         <section>
           <div className="content-cont">
-            <div style={{ height: 30, width: 30 }} className="origin-center transform rotate-90 ">{content}</div>
-
+            <div
+              style={{ height: 30, width: 30 }}
+              className="origin-center transform rotate-90 "
+            >
+              {content}
+            </div>
           </div>
         </section>
       </main>
@@ -40,4 +44,4 @@ const content = (): React.ReactElement<{}> => {
   );
 };
 
-export default content;
+export default Content;

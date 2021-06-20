@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 import SportsBg from "./components/StarsBg";
 
@@ -24,18 +24,19 @@ const App = () => {
       </SportsBg>
     </div>
   );
-}
+};
 
 export default function WithRouter() {
-  return <Router>
-    <App />
-    <Switch>
-      <Route
-        exact
-        path="/"
-        render={() =>
-          <Redirect to='/home?content=youtube' />}
-      />
-    </Switch>
-  </Router>
+  return (
+    <Router>
+      <App />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => <Redirect to="/home?content=youtube" />}
+        />
+      </Switch>
+    </Router>
+  );
 }

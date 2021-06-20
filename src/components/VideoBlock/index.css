@@ -9,10 +9,10 @@
 
 .caro-open {
   cursor: pointer;
-  transform: rotate(0deg)
+  transform: rotate(0deg);
 }
 
 .caro-close {
   cursor: pointer;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
