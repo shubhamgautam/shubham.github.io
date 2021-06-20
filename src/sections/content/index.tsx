@@ -2,6 +2,7 @@ import * as React from "react";
 import "./styles.css";
 import { useLocation } from "react-router-dom";
 import VideoBlock from "../../components/VideoBlock";
+import IntroBlock from "../Intro";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -25,11 +26,16 @@ const content = (): React.ReactElement<{}> => {
   }, [content])
 
   return (
-    <div className="content-cont">
-      <div style={{ height: 30, width: 30 }} className="origin-center transform rotate-90 ">{content}</div>
-      <div>
-        {getContentBlock()}
-      </div>
+    <div className="content">
+      <main className="main-content font-mono">
+        <IntroBlock />
+        <section>
+          <div className="content-cont">
+            <div style={{ height: 30, width: 30 }} className="origin-center transform rotate-90 ">{content}</div>
+
+          </div>
+        </section>
+      </main>
     </div>
   );
 };
