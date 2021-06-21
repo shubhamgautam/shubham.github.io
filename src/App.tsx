@@ -15,13 +15,13 @@ import "./styles.css";
 const App = () => {
   return (
     <div className="App ">
-      <SportsBg>
-        <div>
-          <TopBar />
+      <div>
+        <TopBar />
+        <SportsBg>
           <Content />
-          <BottomBar />
-        </div>
-      </SportsBg>
+        </SportsBg>
+        <BottomBar />
+      </div>
     </div>
   );
 };

@@ -5,10 +5,16 @@ import Logo from "../../images/unnamed.png";
 
 const topBar = (): React.ReactElement<{}> => {
   return (
-    <div className="tp-bar">
-      <img className="me-pic" src={Logo} width="60" height="60" />
-      <NavBar />
-    </div>
+    <header className="tp-bar">
+      <nav className="nav">
+        <div className="app-logo">
+          <img className="me-pic" src={Logo} width="60" height="60" />
+        </div>
+        <div>
+          <NavBar />
+        </div>
+      </nav>
+    </header>
   );
 };
 

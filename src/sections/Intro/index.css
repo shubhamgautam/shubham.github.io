@@ -1,28 +1,45 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .header {
-  color: #fff600;
+  color: #ccffbd;
+  animation: fade-in 2s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .name {
-  color: #f8eded;
+  color: hsl(0, 44%, 95%);
 }
 
 .sub-heading {
-  color: #949dc0;
+  color: #bad4d8;
 }
 
 .heading-big {
   margin: 0px;
-  font-size: clamp(30px, 8vw, 60px);
+  font-size: clamp(40px, 7vw, 80px);
   font-weight: 600;
+  line-height: 88px;
+  animation: fade-in 4s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .description {
-  color: #8892b0;
+  color: #c0c8df;
 }
 
 .description p {
   margin-top: 20px;
-  max-width: 500px;
+  max-width: 600px;
+  margin-block-start: 1em;
+  animation: fade-in 6s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .intro-sec {
@@ -36,4 +53,15 @@
   align-items: flex-start;
   min-height: 100vh;
   padding: 0px;
+}
+
+.description a {
+  color: #ccffbd;
+  transition: box-shadow 1s linear;
+  padding: 5px;
+  border: 0px;
+}
+
+.description a:hover {
+  box-shadow: 0px 0px 1px 1px #ccffbd;
 }
