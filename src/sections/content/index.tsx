@@ -3,6 +3,7 @@ import "./styles.css";
 import { useLocation } from "react-router-dom";
 import VideoBlock from "../../components/VideoBlock";
 import IntroBlock from "../Intro";
+import SocialMediaLink from "../../components/SocilaMediaLink";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -27,6 +28,7 @@ const Content = (): React.ReactElement<{}> => {
 
   return (
     <div className="content">
+      <SocialMediaLink />
       <main className="main-content font-mono">
         <IntroBlock />
         <section>

@@ -1,0 +1,22 @@
+.social-media-bar {
+ position: absolute;
+ bottom: 0px;
+ left: 40px;
+}
+
+.social-icon-list li:first-child,
+.social-icon-list li:nth-child(3) {
+ height: 5px;
+ width: 5px;
+ background-color: white;
+ border: 1px solid white;
+ border-radius: 5px;
+}
+
+.social-icon-list li:nth-child(2) {
+ height: 200px;
+ width: 2.5px;
+ border-right: 1px solid white;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}

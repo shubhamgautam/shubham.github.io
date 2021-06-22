@@ -32,7 +32,11 @@ const IntroBlock = (): React.ReactElement<{}> => {
           entrepreneurship.
         </p>
       </div>
-      <div>Get In Touch</div>
+      <div className="">
+        <a href="mailto:shubhamgautam89@gmail.com" className="email-link">
+          Get In Touch
+        </a>
+      </div>
     </section>
   );
 };
