@@ -1,22 +1,28 @@
+import "./styles.css";
+
 import * as React from "react";
-import BottomBar from "./components/infobar";
-import Content from "./sections/content";
-import TopBar from "./components/topbar";
+
 import {
+  Redirect,
+  Route,
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect,
 } from "react-router-dom";
-import SportsBg from "./components/StarsBg";
 
-import "./styles.css";
+import BottomBar from "./components/infobar";
+import ContactMe from "./components/ContactMe";
+import Content from "./sections/content";
+import SocialMediaLink from "./components/SocilaMediaLink";
+import SportsBg from "./components/StarsBg";
+import TopBar from "./components/topbar";
 
 const App = () => {
   return (
     <div className="App ">
       <div>
         <TopBar />
+        <SocialMediaLink />
+        <ContactMe />
         <SportsBg>
           <Content />
         </SportsBg>

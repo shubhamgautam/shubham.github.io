@@ -1,0 +1,46 @@
+.contact-me {
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    z-index:11;
+}
+
+.contact-me-list li {
+    margin: 20px auto;
+}
+
+
+.contact-me-list li:first-child{
+    height: 5px;
+    width: 5px;
+    background-color: #c0c8df;
+    border-radius: 5px;
+}
+
+.contact-me-list li:nth-child(2){
+    height: 120px;
+    width: 1px;
+    background-color: #c0c8df;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+   
+.contact-me-list li:last-child{
+    height: 100px;
+    width: 1px;
+    background-color: #c0c8df;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.mail-me a {
+    color: #c0c8df;
+    font-size: 12px;
+    transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    writing-mode: vertical-rl;
+}
+
+.mail-me a:hover{
+    color: #ccffbd !important;
+    transform: translateY(-5px);
+}

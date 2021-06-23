@@ -1,5 +1,6 @@
-import * as React from "react";
 import "./index.css";
+
+import * as React from "react";
 
 const IntroBlock = (): React.ReactElement<{}> => {
   return (
@@ -27,8 +28,8 @@ const IntroBlock = (): React.ReactElement<{}> => {
           >
             Microsoft
           </a>
-          focused on building next gent accessible, human centeric products. I
-          love to try new and different things with inner kick of
+          focused on building next gen accessible, human centeric products. I
+          love to try building new things as i often get inner kick of
           entrepreneurship.
         </p>
       </div>

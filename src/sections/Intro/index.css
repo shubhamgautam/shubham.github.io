@@ -36,7 +36,7 @@
 
 .description p {
   margin-block-start: 30px;
-  margin-block-end: 30px;
+  margin-block-end: 35px;
   max-width: 600px;
   animation: fade-in 6s;
   -webkit-font-smoothing: antialiased;
