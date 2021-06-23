@@ -16,7 +16,7 @@ const navBar = (): React.ReactElement<{}> => {
   ];
   getYtVideos();
   return (
-    <div className="tp-bar">
+    <div className="nav-bar">
       {itemArr.map((linkItem: itemProp) => (
         <Link title={linkItem.label} url={linkItem.url} isActive={false} />
       ))}

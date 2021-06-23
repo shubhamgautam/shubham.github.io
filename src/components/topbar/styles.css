@@ -5,9 +5,26 @@
   align-items: center;
   padding: 10px 0px;
   color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  padding: 0px 50px;
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .me-pic {
   border-radius: 50%;
   box-shadow: 0px 0px 2px 2px white;
+}
+
+.app-logo {
+  width: 60px;
 }
