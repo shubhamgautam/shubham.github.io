@@ -8,6 +8,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #02080f;
+  -webkit-font-smoothing: antialiased;
 }
 .stars-wrapper {
   position: absolute;

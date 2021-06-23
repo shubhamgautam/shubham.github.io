@@ -1,0 +1,13 @@
+.nav-bar a{
+    font-size: 13px;
+    color: #c0c8df;
+    margin: 0px 20px;
+}
+
+.nav-bar a:hover {
+    color: #ccffbd;
+}
+
+.nav-bar .yt:hover {
+    color: red
+}
