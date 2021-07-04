@@ -1,0 +1,54 @@
+
+@keyframes logoMove {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes image-slide {
+    0% { transform: translatex(-90vw) scale(0); }
+    60% { transform: translatex(-90vw) scale(1); }
+    90% { transform: translatex(0px) scale(1); }
+    100% { transform: translatex(0px) scale(1); }
+  }
+
+.loading-cont {
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading-box{
+    margin: 40vh auto;
+    width: 18em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    height: 1.6em;
+    width: 1.6em;
+    text-align: center;
+    font-family: monospace;
+    font-size:24px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(238, 215, 13);
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgb(234, 243, 173), 0 3px 6px rgb(234, 243, 173),;
+    animation: logoMove 1s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+.ow-name {
+    color:rgb(238, 215, 13);
+    -webkit-animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: image-slide 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+    font-size: 1.6em;
+    margin-left: 10px;
+    font-weight: 600;
+    overflow: hidden;
+}

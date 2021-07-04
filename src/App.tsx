@@ -12,17 +12,23 @@ import {
 import BottomBar from "./components/infobar";
 import ContactMe from "./components/ContactMe";
 import Content from "./sections/content";
+import Loading from "./scenes/loading";
 import SocialMediaLink from "./components/SocilaMediaLink";
 import SportsBg from "./components/StarsBg";
 import TopBar from "./components/topbar";
 
 const App = () => {
+  let width = window.innerWidth;
+
   return (
     <div className="App ">
       <div>
         <TopBar />
-        <SocialMediaLink />
-        <ContactMe />
+        {
+          width> 768? <><SocialMediaLink />
+          <ContactMe /></>: []
+        }
+        
         <SportsBg>
           <Content />
         </SportsBg>
@@ -35,12 +41,21 @@ const App = () => {
 export default function WithRouter() {
   return (
     <Router>
-      <App />
       <Switch>
         <Route
           exact
           path="/"
-          render={() => <Redirect to="/home?content=youtube" />}
+          render={() => <Redirect to="/loading" />}
+        />
+         <Route
+          exact
+          path="/home"
+          component={App}
+        />
+        <Route
+          exact
+          path="/loading"
+          component={Loading}
         />
       </Switch>
     </Router>

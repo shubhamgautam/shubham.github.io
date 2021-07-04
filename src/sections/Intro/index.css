@@ -19,13 +19,15 @@
 
 .sub-heading {
   color: #bad4d8;
+  margin-top: 1em;
+  
 }
 
 .heading-big {
   margin: 0px;
   font-size: clamp(35px, 7vw, 70px);
   font-weight: 600;
-  line-height: 80px;
+  line-height: 1.1em;
   animation: fade-in 4s;
   -webkit-font-smoothing: antialiased;
 }
