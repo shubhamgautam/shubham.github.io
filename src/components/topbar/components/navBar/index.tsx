@@ -10,7 +10,7 @@ type itemProp = {
   url: string;
 };
 
-const navBar = (): React.ReactElement<{}> => {
+const NavBar = (): React.ReactElement<{}> => {
   const itemArr = [
     { label: "About", id: "about", url: "" },
     { label: "Experience", id: "experience", url: ""  },
@@ -21,12 +21,13 @@ const navBar = (): React.ReactElement<{}> => {
   getYtVideos();
   return (
     <div className="nav-bar font-mono">
-      {itemArr.map((linkItem: itemProp) => (
-        <a className={linkItem.id === "youtube"? "yt": ""} href={`/#${linkItem.id}`}>{linkItem.label}</a>
-      ))}
+      <ul>
+        {itemArr.map((linkItem: itemProp) => (
+          <li><a className={linkItem.id === "youtube"? "yt": ""} href={`/#${linkItem.id}`}>{linkItem.label}</a></li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default navBar;
-/*//*/
+export default NavBar;

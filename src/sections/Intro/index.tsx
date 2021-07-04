@@ -6,7 +6,7 @@ const IntroBlock = (): React.ReactElement<{}> => {
   return (
     <section className="intro-sec">
       <div className="header">
-        <h1 className="text-left mb-8">Hi, my name is </h1>
+        <h1 className="text-left mb-6">Hi, my name is </h1>
       </div>
       <div className="name">
         <h2 className="heading-big text-left font-sans">Shubham Gautam.</h2>

@@ -1,0 +1,33 @@
+@keyframes active-hamburger {
+     /* You could think of as "step 1" */
+  0% {
+    top: 0%;
+    transform: rotateZ('0deg');
+  }
+  /* You could think of as "step 2" */
+  100% {
+    top: 50%;
+    transform: rotateZ('90deg');
+  }
+}
+
+.hamburger{
+    width: 44px;
+    cursor: pointer;
+    top: -12px;
+    position: relative;
+    line-height: 10px;
+
+}
+
+.hamburger b {
+    display: inline-block;
+    width: 44px;
+    height: 1px;
+    background-color: white;
+    line-height: 10px;
+}
+
+.close b:nth-child(3) {
+    animation: active-hamburger 0.8s swing;
+}
