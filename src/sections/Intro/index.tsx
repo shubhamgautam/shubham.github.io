@@ -18,8 +18,8 @@ const IntroBlock = (): React.ReactElement<{}> => {
       </div>
       <div className="description font-sans text-left">
         <p>
-          I'm Bangalore based software engineer who love building,desigining
-          (partially) awesome digital experience. Currently, I'm an engineer at
+          I'm Bangalore based software engineer who loves building,designing
+          (partially) awesome digital experiences. Currently, I'm an engineer at
           <a
             className=""
             target="_blank"
@@ -28,8 +28,8 @@ const IntroBlock = (): React.ReactElement<{}> => {
           >
             Microsoft
           </a>
-          focused on building next gen accessible, human centeric products. I
-          love to try building new things as i often get inner kick of
+          focused on building next gen accessible, human centric products. I
+          love try to build new things as i often get an inner kick of
           entrepreneurship.
         </p>
       </div>
